@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Weather Service</title>
+</head>
+<body>
+    <header><h1 class="title">Weather Board</h1></header>
+
+    <main class="container flex-row">
+        <div class="search flex-column">
+            <h2 class="city-search">Search For a City</h2>
+            <form class="flex-column">
+            <input type="text" class="search-input" placeholder="Search City" id="city-name" name="city-name">
+            <button class="btn" type="submit" id="search-btn" onclick="searchCity(event)">Search</button>
+            <button class="btn" type="submit" id="clear-btn" onclick="clearData(event)">Clear History</button>  
+            </form>
+            <ul id="previous-list">
+               
+            </ul>
+        </div>
+        <div class="flex-colum info">
+            <div class="city-info flex-column">
+                
+                <h2 class="city-name">City<img id="weather-icon" src="" ></img></h2>
+                
+                <ul class="weather-info">
+                    <li id="city-temp" class="list-item">Temp:</li>
+                    <li id="city-wind" class="list-item">Wind:</li>
+                    <li id="city-humidity" class="list-item">Humidity:</li>
+                    <li id="city-uv" class="list-item">UV Index:</li>
+                    
+                </ul>
+            </div>
+            <div class="forcast-border">
+                <div class="title-forcast"><h3 class="forcast-tite">5 Day Forcast</h3></div>
+                <div class="flex-row forcast-cards">
+                    <div class="forcast-card flex-colum">
+                    <h4 class="date">1/1/2022</h4>
+                    <p class="card-info">Temp:</p>
+                    <p class="card-info">Wind</p>
+                    <p class="card-info">Humidity:</p>
+                    </div>
+                    <div class="forcast-card flex-colum">
+                    <h4 class="date">1/1/2022</h4>
+                    <p class="card-info">Temp:</p>
+                    <p class="card-info">Wind</p>
+                    <p class="card-info">Humidity:</p>
+                    </div>
+                    <div class="forcast-card flex-colum">
+                    <h4 class="date">1/1/2022</h4>
+                    <p class="card-info">Temp:</p>
+                    <p class="card-info">Wind</p>
+                    <p class="card-info">Humidity:</p>
+                    </div>
+                    <div class="forcast-card flex-colum">
+                    <h4 class="date">1/1/2022</h4>
+                    <p class="card-info">Temp:</p>
+                    <p class="card-info">Wind</p>
+                    <p class="card-info">Humidity:</p>
+                    </div>
+                    <div class="forcast-card flex-colum">
+                    <h4 class="date">1/1/2022</h4>
+                    <p class="card-info">Temp:</p>
+                    <p class="card-info">Wind</p>
+                    <p class="card-info">Humidity:</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+
+
+
+
+
+    </main>
+    
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
