@@ -37,7 +37,7 @@ searchCity = e => {
     document.querySelector('#weather-icon').src = ""
     
     var searchName = cityName.value
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + searchName + "&appid=" + APIKey;
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + searchName + "&appid=" + APIKey;
     cityName.value = '';
     console.log(searchName);
 
